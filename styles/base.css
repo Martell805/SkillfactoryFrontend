@@ -1,0 +1,90 @@
+:root {
+  --color-primary: #1a3a5c;
+  --color-accent: #2ec4b6;
+  --color-accent-hover: #25a89e;
+  --color-bg: #f5f7fa;
+  --color-bg-card: #ffffff;
+  --color-text: #1a1a2e;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-tag-bg: #ffffff;
+  --color-tag-border: #d1d5db;
+
+  --font-main: 'Golos Text', 'Segoe UI', sans-serif;
+
+  --radius-card: 12px;
+  --radius-tag: 100px;
+  --radius-btn: 8px;
+
+  --shadow-card: 0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
+  --shadow-card-hover: 0 4px 16px rgba(0,0,0,.12), 0 8px 32px rgba(0,0,0,.08);
+
+  --transition: 0.2s ease;
+
+  --container-width: 1180px;
+  --container-padding: 0 24px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
